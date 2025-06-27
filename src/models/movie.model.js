@@ -8,7 +8,7 @@ const Movie = sequelize.define("Movie", {
         autoIncrement: true,
         allowNull: false,
     },
-    name: {
+    title: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
@@ -17,6 +17,19 @@ const Movie = sequelize.define("Movie", {
         type: DataTypes.TEXT,
         allowNull: true,
     },
+    director:{
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    genero:{
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    duracion:{
+        type: DataTypes.INTEGER, // minutos
+        allowNull: false,
+    },
+
 });
 
 export default Movie;
