@@ -1,8 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path'
-import router from './routes/pelicula.routes.js'; 
-import { initDB } from './config/db.js'; 
+import router from './src/routes/movie.routes.js'; 
+import { initDB } from './src/config/database.js'; 
 dotenv.config();
 
 const app = express();
