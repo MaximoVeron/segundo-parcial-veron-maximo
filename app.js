@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use("/api/pelicula", router);
+app.use("/api/movies", router);
 
 const PORT = process.env.PORT || 4000;
 
